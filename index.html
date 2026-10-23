@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Information Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Student Information Form</h1>
+      <p>Please complete all required fields.</p>
+    </header>
+
+    <main>
+      <form action="#" method="post">
+        <div>
+          <label>Student Details</label>
+
+          <p>
+            <label for="student-name">Student name</label><br />
+            <input
+              id="student-name"
+              name="student_name"
+              type="text"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="matric-number">Matriculation number</label><br />
+            <input
+              id="matric-number"
+              name="matric_number"
+              type="text"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="department">Department</label><br />
+            <select id="department" name="department" required>
+              <option value="">Select your department</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="software-engineering">Software Engineering</option>
+              <option value="cyber-security">Cyber Security</option>
+            </select>
+          </p>
+
+          <div>
+            <label>Gender</label>
+
+            <p>
+              <input id="female" name="gender" type="radio" value="female" required />
+              <label for="female">Female</label>
+            </p>
+
+            <p>
+              <input id="male" name="gender" type="radio" value="male" />
+              <label for="male">Male</label>
+            </p>
+          </div>
+
+          <p>
+            <label for="phone">Phone number</label><br />
+            <input id="phone" name="phone" type="tel" required />
+          </p>
+
+          <p>
+            <label for="email">Email address</label><br />
+            <input id="email" name="email" type="email" required />
+          </p>
+
+          <div>
+        <label>programme</label>
+          </div>
+              <input
+                id="full-time"
+                name="programme"
+                type="radio"
+                value="full-time"
+                required
+              />
+              <label for="full-time">Full time</label>
+            
+
+            
+              <input
+                id="weekdays"
+                name="programme"
+                type="radio"
+                value="weekdays"
+              />
+              <label for="weekdays">Weekdays</label>
+            
+
+        
+              <input
+                id="weekend"
+                name="programme"
+                type="radio"
+                value="weekend"
+              />
+              <label for="weekend">Weekend</label>
+            
+          <br><br>
+          <div>
+        
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+          
+          </div>
+        </div>  
+      </form>
+    </main>
+
+    <footer>
+      <p>College of Computing student records form</p>
+    </footer>
+  </body>
+</html>
